@@ -1,0 +1,31 @@
+# Nome do workflow
+name: UI tests
+
+# trigger para workflow ser executado
+    # push -> Todo push em qualquer branch
+on: [push]
+
+jobs:
+  cypress-run-api:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+            spec: cypress/e2e/api_test/*.cy.js
+
+  # cypress-run-ui:
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #     # Install npm dependencies, cache them correctly
+  #     # and run all Cypress tests
+  #     - name: Cypress run
+  #       uses: cypress-io/github-action@v6
+  #       with:
+  #           spec: cypress/e2e/tests_practice_automation_sites/*.cy.js
