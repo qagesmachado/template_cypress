@@ -1,5 +1,5 @@
 # Nome do workflow
-name: ON Push workflow
+name: On Push workflow
 
 on:
   push:
