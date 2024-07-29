@@ -16,6 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './api_commands/usuario_commands'
+import './e2e_commands/session'
+import './e2e_commands/user_management'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
