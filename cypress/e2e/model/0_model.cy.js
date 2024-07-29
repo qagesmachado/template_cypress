@@ -4,14 +4,6 @@ describe('Descrição', () => {
 
     beforeEach('Antes de cada um', () => {
         cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
-        cy.log('Antes de cada um')
     });
 
     before('Antes', () => {

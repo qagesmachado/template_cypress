@@ -1,9 +1,10 @@
 # Nome do workflow
-name: UI tests
+name: ON Push workflow
 
-# trigger para workflow ser executado
-    # push -> Todo push em qualquer branch
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   cypress-run-api:
